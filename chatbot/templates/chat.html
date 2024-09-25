@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Chat</title>
+  </head>
+  <body>
+    <h1>Patient Chat with AI Bot</h1>
+    <h3>Patient: {{ patient.first_name }} {{ patient.last_name }}</h3>
+
+    <div id="chat-box">
+      <h2>Chat History</h2>
+      {% for message, response in conversation %}
+      <p><strong>You:</strong> {{ message }}</p>
+      <p><strong>Bot:</strong> {{ response }}</p>
+      {% endfor %}
+    </div>
+
+    <form method="POST">
+      {% csrf_token %}
+      <label for="message">Your Message:</label>
+      <input type="text" id="message" name="message" required />
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
