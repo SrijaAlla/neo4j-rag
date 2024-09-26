@@ -53,7 +53,7 @@ python manage.py createsuperuser
 ```
 
 #### Create a patient
-On `http://localhost:8000/admin`
+On `http://localhost:8000/admin`.
 Add a Patient.
 ```python
 python manage.py runserver
@@ -63,7 +63,7 @@ The chat will be opened at - `http://localhost:8000/chat/`
 The code uses `langchain_openai`s ChatOpenAI and Neo4j RAG graph. 
 
 ### File explanations 
-`patient_chat/chatbot/summary.py/` contains code to generate summary of the conversation in real time. Prints on the console on in the frontend. \
-`patient_chat/chatbot/entity_extractor.py/` contains code to extract entities and add to the knowledge graph in realtime \
+`patient_chat/chatbot/summary.py/` contains code to generate summary of the conversation in real time. Prints on the console on the frontend. \
+`patient_chat/chatbot/entity_extractor.py/` contains code to extract entities and add to the knowledge graph in realtime. The entities after each query will also be displayed on console. \
 `patient_chat/chatbot/retriever.py/` contains code to to generate response for a users query using RAG. \
 
