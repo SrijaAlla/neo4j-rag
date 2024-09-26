@@ -17,14 +17,14 @@ pip install requirements.txt
 1. Create a neo4j account - https://neo4j.com/product/auradb/
 2. Create an instance.
 3. Create a `.env` file in the root directory and add the following environment variables:
-   ```bash
+```bash
   OPENAI_API_KEY=your_openai_api_key
   NEO4J_URI=neo4j+s://<id>.databases.neo4j.io
   NEO4J_USERNAME=neo4j
   NEO4J_PASSWORD= "instance password"
   AURA_INSTANCEID="instance id"
   AURA_INSTANCENAME="instance name"
-   ```
+```
 ### Django setup
 Create a database wiht the name written in `settings.py` - `rag_chatbot` in this case
 ```bash
