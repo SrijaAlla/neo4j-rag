@@ -10,6 +10,8 @@ Follow the instructions below for set up and run.
 - Python 3.10 installed.
 - necessary Python packages installed from requirements.text.
 ```python
+python -m venv venv
+./venv/Scripts/activate/
 pip install requirements.txt
 ```
 ## Setup
