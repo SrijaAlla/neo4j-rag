@@ -12,7 +12,7 @@ Follow the instructions below for set up and run.
 ```python
 python -m venv venv
 ./venv/Scripts/activate/
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 ## Setup
 
